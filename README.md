@@ -15,15 +15,15 @@ Refer to `testsort.cpp` for a detailed example of using `sorter`.
 
 ```C++
 int input[30]   = {2,2,1,0,1,0,1,1,0,2,2,1,1,1,2,0,0,1,1,0,1,0,1,2,0,0,0,1,1,2};
-    int length = sizeof(input)/sizeof(*input);
-    Sorter mySorter = Sorter(input, length);
+int length = sizeof(input)/sizeof(*input);
+Sorter mySorter = Sorter(input, length);
 
-    try {
-        mySorter.countingSort();                            // Other sorting methods could be added later.
-    } catch (const std::exception& e) {
-        std::cout << e.what() << std::endl;
-    }
-    int* sorted = mySorter.getSorted(); 
+try {
+    mySorter.countingSort();                            // Other sorting methods could be added later.
+} catch (const std::exception& e) {
+    std::cout << e.what() << std::endl;
+}
+int* sorted = mySorter.getSorted(); 
 
 ```
 
