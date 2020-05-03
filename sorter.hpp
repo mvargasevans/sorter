@@ -58,8 +58,8 @@ class Sorter {
 
     public:
         int size;                           // array size
-        int* data;                          // data holder for int types
-        int* sorted;                        // sorted data
+        int *data;                          // data holder for int types
+        int *sorted;                        // sorted data
 
         Sorter(int* arr, int s) {           
             size = s;

@@ -39,7 +39,7 @@ TEST_CASE("Counting sort", "[countingSort]") {
     } catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-    int* sorted = mySorter.getSorted();
+    int *sorted = mySorter.getSorted();
     
     int resultFalse[30] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int resultTrue[30]  = {0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2};
